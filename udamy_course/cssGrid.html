@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>cssGrid</title>
+  <style>
+    .column-1{
+      background-color: green;
+    }
+    .column-2{
+      background-color: greenyellow;
+    }
+    .column-3{
+      background-color: red;
+      /* height: 150px; */
+    }
+    .column-4{
+      background-color: blue;
+    }
+    .column-5{
+      background-color: coral;
+    }
+
+    .container-1{
+      font-family: sans-serif;
+      font-size: 30px;
+      background-color: #ddd;
+      margin: 40px;
+
+      /* CSS GRID */
+      /* sizing grid columns */
+      display: grid;
+      /* grid-template-columns: 200px 200px 1fr 1fr ;/*150px 150px; */
+      /* grid-template-columns: 3fr 1fr 1fr 1fr; */
+      /* grid-template-rows: 300px 200px; */
+
+      /* we use auto keyword */
+
+      /* grid-template-columns: 3fr 1fr 1fr auto; */
+
+      /* we use a repit() function in column*/
+
+      grid-template-columns: repeat(4,1fr);
+      grid-template-rows: 1fr 1fr;
+      height: 500px;
+
+      /* gap: 30px; */
+      column-gap: 30px;
+      row-gap: 60px;
+      /*  */
+      display: none;
+
+    }
+
+    .column-1{
+      /* we use thi trik change the spacific place */
+      grid-column: 2;
+      /* grid-row: 2; */
+    }
+    .column-2{
+      grid-column: 3;
+      grid-row: 2;
+    }
+
+    .container-2{
+      
+      /* display: none; */
+      display: grid;
+      grid-template-columns: 125px 200px 125px;
+      grid-template-rows: 250px 100px;
+      gap: 50px;
+
+      /* aligning trecks inside container distribute  empty space */
+      justify-content: center;
+      /* justify-content: space-between; */
+      align-content: center;
+
+      /* aligning item inside  cells moving   items aaround inside cells */
+
+      align-items: center  ;
+      justify-items: center;
+
+
+
+
+      font-family: sans-serif;
+      background-color: black;
+      font-size: 40px;
+      margin: 40px;
+      width: 700px;
+      height: 600px;
+    }
+
+    /* work on individuals items */
+    .column-3{
+      align-self: end;
+      justify-self: end;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container-1">
+    <div class="el column-1">(1)HTML</div>
+    <div class="el column-2">(2)CSS</div>
+    <div class="el column-3">(3)JAVA</div>
+    <div class="el column-4">(4)NODE</div>
+    <div class="el column-5">(5)REACT</div>
+  </div>
+  <div class="container-2">
+    <div class="el column-1">(1)</div>
+    <div class="el column-2">(2)</div>
+    <div class="el column-3">(3)</div>
+    <div class="el column-4">(4)</div>
+    <div class="el column-5">(5)</div>
+  </div>
+</body>
+</html>

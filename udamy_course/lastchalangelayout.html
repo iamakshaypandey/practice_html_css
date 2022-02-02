@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>layoutchalange1</title>
+  <!-- <link rel="stylesheet" href="flexlayoutchallange.css"> -->
+  <style>
+    *{
+margin:0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body{
+font-family: sans-serif;
+line-height: 1.4;
+}
+
+
+.container{
+/* background-color: red; */
+/* display: flex; */
+
+/* display: grid;
+grid-template-columns: 250px 1fr 1fr;
+gap: 40px; */
+}
+
+.product-img{
+/* float: left; */
+/* margin-right: 40px; */
+}
+
+.product{
+border: 4px solid black;
+width: 825px;
+margin: 50px auto;
+position: relative;
+display: grid;
+grid-template-columns: 250px 1fr 1fr;
+gap: 40px;
+}
+
+.product-title{
+text-align: center;
+font-size: 22px;
+text-transform: uppercase;
+background-color: #f7f7f7;
+padding: 15px;
+grid-column: 1/-1;
+}
+
+.product-info{
+/* width: 243px; */
+/* float: left; */
+flex: 1;
+margin-top: 20px;
+/* margin-right: 40px; */
+}
+
+.product-price{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+
+}
+
+.price{
+/* float: left; */
+font-size: 20px;
+}
+.shiping{
+font-size: 12px;
+text-transform: uppercase;
+font-weight: bold;
+color: #777;
+/* float: right; */
+/* margin-bottom: 20px; */
+/* margin-top: 8px; */
+}
+
+.sale{
+background-color: #ec2f2f;
+color: #fff;
+font-size: 12px;
+font-weight: bold;
+text-transform: uppercase;
+letter-spacing: 2px;
+padding: 7px 15px;
+display: inline-block;
+position: absolute;
+top:-10px;
+left: -38px;
+}
+
+.product-discription{
+/* clear: both; */
+margin-bottom: 10px;
+}
+
+.more-info:hover,.more-info:active{
+text-decoration: none;
+}
+.product-colors{
+  display: flex;
+  gap:10px
+}
+.color{
+background-color: #000;
+height: 22px;
+width: 22px;
+/* display: inline-block; */
+/* margin-right: 10px; */
+}
+.blue-color{
+background-color: #2f6ee2;
+}
+.red-color{
+background-color:#ec2f2f;
+}
+
+.green-color{
+background-color: #90cc20;
+}
+.yellow-color{
+background-color: #f0bf1e;
+}
+.pink-color{
+background-color: pink;
+}
+.product-details{
+/* width: 243px;
+float: left; */
+margin-top: 20px;
+flex: 1;
+}
+.detail-title{
+text-transform: uppercase;
+font-size: 16px;
+margin-bottom: 15px;
+}
+
+.details-list{
+margin-bottom: 10px;
+}
+
+.add-chart{
+ background-color: #000;
+ border: none;
+ color: #fff;
+ font-size: 20px;
+ text-transform: uppercase;
+ cursor: pointer;
+ padding: 15px;
+ width: 100%;
+ border-top: 4px solid black;
+ grid-column: 1/-1;
+}
+
+.add-chart:hover{
+color: #000;
+background-color: #fff;
+}
+
+.first-div{
+margin: auto;
+width: 800px;
+background-color: #1098ad;
+border-left: 10px;
+height: 80px;
+padding: 10px;
+}
+
+h1{
+font-size: 30px;
+text-transform: uppercase;
+}
+nav{
+font-size: 22px;
+font-weight: bold;
+}
+
+a:link{
+color: #000;
+text-transform: uppercase;
+text-decoration: none;
+}
+
+a:visited{
+color: brown;
+}
+  </style>
+</head>
+<body>
+  <div class="first-div">
+    <h1 class="h1-class">welcome to float layout project</h1>
+    <nav class="navigation">
+      <a href="index.html">home</a>
+      <a href="css.html">learn css</a>
+      <a href="/img/demo.html">demopage</a>
+
+    </nav>
+  </div>
+  <article class="product">
+    <h2 class="product-title">Converse Chuck Taylar All Star Low Top</h2>
+    <!-- <div class="container clearfix"> -->
+      <img src="img/mypractice.jpeg" 
+      alt="some img"
+      height="250"
+      width="250"
+      class="product-img">
+    <div class="product-info">
+      <div class="product-price">
+        <p class="price"><strong>$65.00</strong></p>
+        <p class="shiping">Free shipping</p>
+      </div>
+      <p class="sale">Sale</p>
+      <p class="product-discription">
+        Ready to dress up or down, these classic canvas Chucks are an everyday
+        wardrobe staple.</p>
+        <a href="https://akshay-pandey-portfolio-1ac3bbk.netlify.app/index.html" class="more-info">more information &rarr;</a>
+        <div class="product-colors">
+          <div class="color"></div>
+          <div class="color blue-color"></div>
+          <div class="color red-color"></div>
+          <div class="color green-color"></div>
+          <div class="color pink-color"></div>
+          <div class="color yellow-color"></div>
+        </div>
+      </div>
+
+      <div class="product-details">
+        <h3 class="detail-title">product details</h3>
+        <ul class="details-list">
+          <li>Lightweight, durable canvas sneaker
+          </li>
+          <li>Lightly padded footbed for added comfort
+          </li>
+          <li>
+            Iconic Chuck Taylor ankle patch.
+          </li>
+        </ul>
+      </div>
+    <!-- </div> -->
+    <button class="add-chart">Add to chart</button>
+  </article>
+</body>
+</html>
+
+

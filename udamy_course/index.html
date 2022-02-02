@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>udamy course practice</title>
+    <link rel="stylesheet" href="udamystyle.css">
+</head>
+<body>
+    <div class="container">
+        <header class="main-header clearfix">
+            <nav>
+                <!-- <h2>learn CSS click below link</h2> -->
+                <a href="css.html">css_learn</a>
+                <a href="flexbox_cssgrid_learn.html">layouts_learn</a>
+                <a href="img/demo.html">demopage</a>
+                <a href="layoutschalange.html">layoutchalang1</a>
+                <a href="flexBox.html">flexlayout</a>
+                <a href="layoutchalant-2.html">flexlayoutchallange-2</a>
+                <a href="cssGrid.html">cssGrid</a>
+                <a href="layoutchalang-3.html">cssgridlayout</a>
+                <a href="lastchalangelayout.html">cssgridlastlayoutchallange</a>
+            </nav>
+        </header>
+    <aside class="aside-class">
+        <h1 class="class-selector">Html Fundamentals
+            <ol>
+                <li>introduction to HTML</li>     
+                <li>HTML documents structure</li>  
+                <li>Text Elements</li>  
+                <li>More Text Elements: Lists</li>  
+                <li>images and attributes</li>
+                <li>Hyperlinks</li>
+                <li>structuring our page</li>
+                <li>A note on semantic HTML</li>
+            </ol>
+        </h1>
+    </aside>   
+    <article> 
+        <ol id="id-selector">
+            <li>
+                <h2 class="class-h2">What is HTML?</h2>
+                <ol class="paragraph">
+                    <li>HTML stands for Hyper Text Markup Language</li>
+                    <li>HTML is the standard markup language for creating Web pages</li>
+                    <li>HTML describes the structure of a Web page</li>
+                    <li>HTML consists of a series of elements</li>
+                    <li>HTML elements tell the browser how to display the content</li>
+                    <li>HTML elements label pieces of content such as "this is a heading", "this is a paragraph", "this is a link", etc.</li>       
+                </ol>
+            </li>
+            <li>
+                <h2 class="class-h2" >
+                    what is Html documents structure
+                </h2>
+                <p class="inner-paragraph" >the documents structure in <b>HTML</b> se below picture</p>
+                <img src="/img/htmlstrc.png" alt="img some error" class="img-class">
+                <p class="inner-paragraph">Here is the explanation of the above HTML document structure example:</p>
+            </li>
+            <li>
+                <h2 class="class-h2">
+                    what is Text Elements in HTML?
+                </h2>
+                <p class="inner-paragraph">HTML contains several elements for defining text with a special meaning.</p>
+                <ol class="paragraph">
+                    <li>'<'b'>' - Bold text :- The HTML element defines <'b>bold text<'/b>, without any extra importance.</li>
+                    <li>'<'strong'>' - Important text :- The HTML element defines text with <'strong>strong importance</strong> . The content inside is typically displayed in bold.        </li>
+                    <li>'<'i'>' - Italic text :- The HTML element defines a part of text in an alternate voice or mood. The content inside is typically displayed in <i>italic</i>.        </li>
+                    <li>'<'em'>' - Emphasized text :- The HTML element defines emphasized text. The content inside is typically displayed in <em>italic</em>.</li>
+                    <li>'<'mark'>' - Marked text :- The HTML element defines text that <'mark>should be marked or highlighted:</mark></li>   
+                    <li>'<'small'>' - Smaller text :- The HTML <'small>small element<'/small> defines smaller text: </li>
+                    <li>'<'del'>' - Deleted text :- The HTML <'del> element defines text that has been deleted </del> from a document. Browsers will usually strike a line through deleted text:        </li>
+                    <li>'<'ins'>' - Inserted text :- The HTML <'ins> element defines a text that has been inserted into a document. Browsers will usually underline inserted text:        </li>
+                    <li>'<'sub'>' - Subscript text :-  The HTML element defines <'sub>subscript text </sub>. Subscript text appears half a character below the normal line, and is sometimes rendered in a smaller font. Subscript text can be used for chemical formulas, like H <sub>2</sub>O:        </li>
+                    <li>'<'sup'>' - Superscript text :- The HTML element defines <'sup> superscript text</sup>. Superscript text appears half a character above the normal line, and is sometimes rendered in a smaller font. Superscript text can be used for footnotes, like WWW[1]:        </li>
+                </ol>
+            </li>
+            <li>
+                <h2 class="class-h2"> More Text Elements: List</h2>
+                <p class="inner-paragraph">HTML list helps us to display the information in the form of lists. There are the following three forms a list can be:    </p>
+                <ol class="paragraph">
+                    <li>Ordered Lists
+                        <p>HTML ordered list starts with the '<'OL'>' tag and each items starts with the '<'LI'>' tag. Here is an example of the ordered list:</p>
+                        <ol>
+                            <li>ordered list one</li>
+                            <li>ordered list Two</li>
+                            <li>ordered list Three</li>
+                            <li>ordered list Four</li>
+                            <li>ordered list Five</li>
+                            <li>ordered list Six</li>
+                        </ol>
+                            <h3>HTML Ordered List Type Attributes</h3>
+                            <table>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Description</th>
+                                </tr>
+                                <tr>
+                                    <td>type="1"</td>
+                                    <td>The list items will be numbered with numbers (default)</td>
+                                </tr>
+                                <tr>
+                                    <td>type="a"  </td>
+                                    <td>The list items will be numbered with lowercase letter</td>
+                                </tr>
+                                <tr>
+                                    <td>type="A"	</td>
+                                    <td>The list items will be numbered with uppercase letters </td>
+                                </tr>
+                                <tr>
+                                    <td>type="i"	</td>
+                                    <td>The list items will be numbered with lowercase roman numbers </td>
+                                </tr>
+                                <tr>
+                                    <td>type="I"   </td>
+                                    <td>The list items will be numbered with uppercase roman numbers </td>
+                                </tr>
+                            </table>
+                            <p>above all type used using type attributes in css</p>
+                    </li>
+                    <li>Unordered Lists
+                        <p>HTML unordered list starts with the '<'UL'>' tag and each items starts with the '<'LI'>' tag. Here is an example of unordered list. </p>
+
+                        <ul>
+                        
+                            <li>unordered list one</li>
+                        
+                            <li>unordered list Two</li>
+                        
+                            <li>unordered list Three</li>
+                        
+                            <li>unordered list Four</li>
+                        
+                            <li>unordered list five</li>
+                        
+                            <li>unordered list six</li>
+                        
+                        </ul>
+                    
+                        <table>
+                        
+                            <tr>
+                            
+                                <th>Style</th>
+                            
+                                <th>Description</th>
+                            
+                            </tr>
+                        
+                            <tr>
+                            
+                                <td>list-style-type:circle</td>
+                            
+                                <td>The list items will be marked with circles</td>
+                            
+                            </tr>
+                        
+                            <tr>
+                            
+                                <td>list-style-type:disc</td>
+                            
+                                <td>The list items will be marked with bullets (default)</td>
+                            
+                            </tr>
+                        
+                            <tr>
+                            
+                                <td>list-style-type:square</td>
+                            
+                                <td>The list items will be marked with squares</td>
+                            
+                            </tr>
+                        
+                            <tr>
+                            
+                                <td>list-style-type:none</td>
+                            
+                                <td>The list items will not be marked</td>
+                            
+                            </tr>
+                        
+                        </table>
+                    
+                        <p>use above style css type we write unordered list design</p>
+                    
+                    </li>
+                    <li>Description Lists
+                        <p>A description list, is a list of terms, with a description of each term.
+
+                        <br><br>The '<'DL'>' tag defines a description list, the '<'DT'>' tag defines the term (name), and the '<'DD'>' tag defines the data (description).
+                        
+                        <br><br>Here is an example uses description list in HTML:   
+                        </p>
+                        <h3><!DOCTYPE html>
+                            <html>
+                            <head>
+                               <title>HTML List Example</title>
+                            </head>
+                            <body>
+                            
+                            <dl>
+                               <dt>html</dt>
+                                  <dd>hyper text markup language</dd>
+                               <dt>list</dt>
+                                  <dd>organized, unorganized, description list</dd>
+                            </dl>
+
+                            </body>
+                            </html>
+                            </h3>
+                    </li>
+                    <li>
+                        <h3>HTML Nested Lists</h3>
+                        <p>You are free to nest one list to another, also called as nested list. Here is an example shows how to use nested list in an HTML document.</p>
+                        <ul>
+                            <li>html
+                            <ul>
+                               <li>list
+                               <ul>
+                                  <li>list tutorial</li>
+                                  <li>list example</li>
+                               </ul>
+                               </li>
+                               <li>list tag
+                               <ul>
+                                  <li>list tag tutorial</li>
+                                  <li>list tag examples</li>
+                               </ul>
+                               </li>
+                            </ul>
+                            </li>
+                         </ul>
+                         <p>Here is the sample output produced by the above HTML Nested list example code:</p>
+                    </li>
+                    <li>
+                        <h3>HTML Create Horizontal Lists    </h3> 
+                         <p>You can also create horizontal list in HTML using CSS{display:inline}. Here is an example shows how to create horizontal list in HTML: </p>
+                         <style>
+                            ul li{display:inline;}
+                         </style>  
+                         <ul>
+                            <li>codes</li> - 
+                            <li>cracker</li> - 
+                            <li>html</li> - 
+                            <li>list</li> - 
+                            <li>tutorial</li> - 
+                            <li>examples</li>
+                         </ul>
+                    </li>   
+            <li>
+                <h2 class="class-h2">images and attributes in HTML?</h2>
+                <h3>Insert Image in Web page </h3>
+                <p>HTML allows you to insert an image in a Web page with the help of the IMG tag. This tag uses several attributes, such as src, id, lang, dir, and alt.
+
+                Note - Out of all the attributes of the IMG tag, only the src attribute is necessary.
+                
+                The src attribute provides the information about the path of the image file to the Web browser. If your image and HTML files are stored in the same folder, then there is no need to specify the full path of the image file in the src attribute.
+                
+                If your image and HTML files are in different folders, you have to specify the full path of the image file in the src attribute of the IMG tag</p>
+            <h3>Syntax to Insert Image in a Web page</h3>
+            <p>Here is the syntax to insert an image in a Web page:</p>
+            <img src="/img/Snapchat-4610198.jpg" alt="some_text if img is not print some resion" class="img-class">
+            <h3>Attributes of the IMG tag</h3>
+            <p>The following table describes the attributes of the IMG tag :</p>
+            <table>
+                <tr>
+                    <th>Attributes</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>Id</td>
+                    <td>Assigns a unique identifier to a tag. This identifier must be used only once in a document. This attribute is optional</td>
+                </tr>
+                <tr>
+                    <td>class</td>
+                    <td>Assigns a single name or a set of class names to a tag. However, one or more tags can be assigned with a same class name. This attribute is optional
+                    </td>
+                </tr>
+                <tr>
+                    <td>lang</td>
+                    <td>Specifies the base language used for the IMG tag. This attribute is optional
+                    </td>
+                </tr>
+                <tr>
+                    <td>dir</td>
+                    <td>Assigns a direction to entire or a section of HTML file. This attribute is optional
+                    </td>
+                </tr>
+                <tr>
+                    <td>title</td>
+                    <td>Describes the objective of the use of the IMG tag. This attribute is optional
+                    </td>
+                </tr>
+                <tr>
+                    <td>style</td>
+                    <td>Applies inline CSS style on individual tags in an HTML file. This attribute is optional
+                    </td>
+                </tr>
+                <tr>
+                    <td>src</td>
+                    <td>Specifies the URL or the location of the image. This attribute is mandatory
+                    </td>
+                </tr>
+                <tr>
+                    <td>alt</td>
+                    <td>Specifies the alternate text to be used, if the Web browser cannot render the image. This attribute is optional
+                    </td>
+                </tr>
+                <tr>
+                    <td>height</td>
+                    <td>Specifies the height of the image. This attribute is optional
+                    </td>
+                </tr>
+                <tr>
+                    <td>width</td>
+                    <td>Specifies the width of the image. This attribute is optional                </td>
+                </tr>
+                <tr>
+                    <td>ismap</td>
+                    <td>Indicates that the image is used as an image map. This attribute is optional                </td>
+                </tr>
+                <tr>
+                    <td>usemap</td>
+                    <td>Associates a tag with an image map. This attribute is optional
+                    </td>
+                </tr>
+            </table>
+            <h2 >Common Image Formats</h2>
+            <p>Here are the most common image file types, which are supported in all browsers (Chrome, Edge, Firefox, Safari, Opera):</p>
+            <table>
+                <tr>
+                    <th>abbreviation</th>
+                    <th>File Format</th>
+                    <th>File extension</th>
+                </tr>
+                <tr>
+                    <td>APNG</td>
+                    <td>Animated Portable Network Graphics</td>
+                    <td> .apng</td>
+                </tr>
+                <tr>
+                    <td>GIF</td>
+                    <td>Graphics Interchange Format</td>
+                    <td>.gif</td>               
+                </tr>
+                <tr>
+                    <td>ICO</td>
+                    <td>Microsoft Icon</td>
+                    <td>.ico, .cur
+                    </td>
+                </tr>
+                <tr>
+                    <td>JPEG</td>
+                    <td>Joint Photographic Expert Group image</td>
+                    <td>.jpg, .jpeg, .jfif, .pjpeg, .pjp</td>
+                </tr>
+                <tr>
+                    <td>PNG</td>
+                    <td>Portable Network Graphics</td>
+                    <td>.png</td>
+                </tr>
+                <tr>
+                    <td>SVG</td>
+                    <td>Scalable Vector Graphics</td>
+                    <td>.svg</td>
+                </tr>
+            </table>
+            <h2>Chapter Summary</h2>
+            <ol>
+                <li>Use the HTML '<'img'>' element to define an image </li>
+                <li>Use the HTML src attribute to define the URL of the image</li>
+                <li>Use the HTML alt attribute to define an alternate text for an image, if it cannot be displayed</li> 
+                <li>Use the CSS float property to let the image float to the left or to the right</li>
+                <li>Use the HTML width and height attributes or the CSS width and height properties to define the size of the image</li>
+            </ol>
+            </li> 
+            <li>
+                <h2 class="class-h2">HTML Links - Hyperlinks</h2>
+                <p>HTML links are hyperlinks.
+                    <br>
+                    <br>
+                    You can click on a link and jump to another document.
+                    When you move the mouse over a link, the mouse arrow will turn into a little hand.</p>
+                    <br>
+                    <p>The HTML '<'a'>' tag defines a hyperlink. <br><br> It has the following syntax: </p>
+                    <a href="https://www.w3schools.com/html/html_links.asp">link details</a>
+                    <h3>HTML Links - The target Attribute </h3>
+                    <p>By default, the linked page will be displayed in the current browser window. To change this, you must specify another target for the link. <br> The target attribute specifies where to open the linked document.
+                        <br>The target attribute can have one of the following values:</p>
+                    <ol>
+                        <li>_self - Default. Opens the document in the same window/tab as it was clicked</li>
+                        <li>_blank - Opens the document in a 
+                            new window or tab </li>
+                        <li>_parent - Opens the document in the parent frame </li>
+                        <li>_top - Opens the document in the full body of the window</li>
+                    </ol>
+                    <h3>Absolute URLs vs. Relative URLs </h3>
+                    <p>Both examples above are using an absolute URL (a full web address) in the href attribute. <br>
+                    A local link (a link to a page within the same website) is specified with a relative URL (without the "https://www" part):</p>
+                    <h3>HTML Links - Use an Image as a Link </h3>
+                    <p>click this image and go to site</p>
+                    <a href="https://codescracker.com/html/html-links.htm">
+                    <img src="/img/mypractice.jpeg" alt="HTML tutorial" class="img-class">
+                    </a>   
+                    <p>more feture in hyperlink</p>         
+                    <ol>
+                        <li>Link to an Email Address</li>
+                        <li>use Button as a Link, use onclick event </li>
+                        <li>Link Titles</li>
+                        <li>More on Absolute URLs and Relative URLs</li>
+                    </ol>
+                    <h2>Chapter Summary</h2>
+                    <ol>
+                        <li>Use the '<'a'>' element to define a link </li>
+                        <li>Use the href attribute to define the link address </li>
+                        <li>Use the target attribute to define where to open the linked document</li>
+                        <li>Use the '<'img'>' element (inside '<'a>) to use an image as a link</li>
+                        <li>Use the <b>mailto:</b>  scheme inside the href attribute to create a link that opens the user's email program</li>
+                    </ol>
+            </li>  
+            <li>
+                <h2 class="class-h2">structuring our page</h2>
+
+                <p>Learn in details <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Document_and_website_structure">click hear</a></p>
+            
+                <ol>
+                
+                    <li>header:</li>
+                
+                    <li>navigation bar:</li>
+                
+                    <li>main content:</li>
+                
+                    <li>sidebar:</li>
+                
+                    <li>footer:</li>
+                
+                </ol>
+            
+            </li> 
+            <li>
+                <h2 class="class-h2">what is sementic HTML?</h2>
+                <p>A semantic element clearly describes its meaning to both the browser and the developer. <br>
+                    Examples of <b>non-semantic</b>  elements: '<'div> and '<'span> - Tells nothing about its content. <br>            
+                    Examples of <b>semantic elements:</b> '<'form>, '<'table>, and '<'article> - Clearly defines its content. </p>
+                    <a href="https://www.w3schools.com/html/html5_semantic_elements.asp">read on details</a>
+            </li>                 
+        </ol>
+    </article>
+    <footer>
+        <p class="inner-paragraph">this link watch after read</p>
+        <a href="https://www.freecodecamp.org/news/from-zero-to-game-designer-how-to-start-building-video-games-even-if-you-dont-have-any-experience-5e2f9f45f4bb/">game link details</a>
+    </footer>
+    </div>    
+</body>
+</html>

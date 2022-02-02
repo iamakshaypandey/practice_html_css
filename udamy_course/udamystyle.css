@@ -1,0 +1,171 @@
+/*external css */
+/* *{ */
+    /* universul selector */
+    /* background-color: blue; */
+    /* color: blue; */
+    /* margin: auto;
+    padding: 10px; */
+
+/* } */
+
+/* body{ */
+    /* body selector */
+    /* background-color: blue; */
+/* } */
+
+/* h1{ */
+    /* type selector */
+    /* color: rgba(28, 28, 73, 0.835); */
+/* } */
+
+/* .class-selector{ */
+    /* class selector */
+/* } */
+/* #id-selector{ */
+    /* id selector */
+/* } */
+body{
+    border-top:20px solid #ff4;
+    position: relative;
+    /* background-color:yellow; */
+}
+.aside-class{
+    width: 600px;
+    /* background-color:rgba(184, 182, 177, 0.322); */
+    /* padding: 20px; */
+    /* margin: 10px; */
+    /* font-size: 26px; */
+    /* font-style: italic; */
+    /* height:500px; */
+    /* border-radius: 10px ; */
+    /* border: 40px solid slateblue; */
+    /* text-shadow: slateblue; */
+    /* font-family: sans-serif; */
+    /* text-transform: uppercase; */
+}
+#id-selector{
+    margin: auto;
+    padding: 10px;
+    /* text-align: center; */
+    line-height: 2.5;
+}
+.class-h2{
+    /* max-width: 100%;
+    margin-left: auto;
+    margin-right: auto; */
+    /* color:coral; */
+    margin: 40px;
+    padding: 20px;
+    text-align: center;
+    width: 80%;
+    height: 100px;
+    background-color: teal;
+    font-size: 40px;
+    /* border: 10px green; */
+}
+.container{
+    padding: 60px;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    /* border: 40px solid green; */
+    /* border-radius: 20px; */
+}
+.img-class{
+    /* padding:20px; */
+    width: 800px;
+    height: 800px;
+    padding: 10px;
+    margin: 10px;
+    border: 30px solid firebrick;
+}
+.paragraph{
+    background-color: grey;
+    font-weight: bold;
+    font-family: sans-serif;
+    /* height: 100px; */
+    /* width: 800px; */
+    /* padding: auto; */
+    /* max-width: 800px; */
+}
+.inner-paragraph{
+    font-size: 30px;
+    padding: auto;
+}
+/* pseudo elements  first-inline*/
+p::first-line{
+    color: red;
+    background-color: rgba(184, 182, 177, 0.322);
+}
+
+/* pesudo element after use */
+h2{
+    /* background-color: orangered; */
+    position: relative;
+}
+h2::after{
+    content: 'top it is pseudo element';
+    /* color: palegreen; */
+    background-color: yellow;
+    font-size: 16px;
+    font-weight: bold;
+    display: inline-block;
+    padding: 5px 10px;
+    position: absolute;
+    top:-10;
+    right: 25px;
+
+}
+nav:first-child{
+    /* position: absolute; */
+    /* top: 0; */
+    /* right: 0; */
+    /* left: 0; */
+    /* background-color: green; */
+    /* color:  greenyellow; */
+    /* width: 800px; */
+    /* height:50%; */
+    text-align: center;
+    font-size: 40px;
+    padding: 10px 20px ;
+    margin: auto;
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+}
+
+nav{
+    float: right;
+}
+
+.main-header{
+  background-color: #f7f7;
+  /* background-color: red; */
+  margin-bottom: 60px;
+  padding: 20px 40px;
+}
+
+clearfix::after{
+    clear: both;
+    content: "";
+    display: block;
+}
+article{
+    /* background-color: red; */
+    width: 825px;
+    float: left;
+}
+
+aside{
+    width: 400px;
+    float: right;
+    height: 600px;
+    /* background-color: green; */
+    margin-left: 20px;
+    box-sizing: border-box;
+}
+footer{
+    /* background-color: greenyellow; */
+    clear: both;
+    padding-bottom: 10px;
+    margin-top: 20px;
+}
